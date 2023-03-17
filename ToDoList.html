@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <section id="to-do-list">
+      <h1 id="section-title">To DO List</h1>
+      <div class="container">
+        <form action="" id="list-form">
+          <input
+            type="text"
+            class="text-field"
+            placeholder="Write your task here"
+            data-field="taskName"
+          />
+          <div class="btns">
+            <input
+              type="submit"
+              class="add-btn"
+              value="Add Task"
+              data-field="addTask"
+            />
+            <input
+              type="submit"
+              class="delAll-btn"
+              value="Delete All"
+              data-field="DelAll"
+            />
+          </div>
+        </form>
+        <ul class="tasks">
+          <div class="tasks__header">
+            <span>Task</span>
+            <span>options</span>
+          </div>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
